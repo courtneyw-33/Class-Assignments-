@@ -1,0 +1,36 @@
+<!--Courtney Wilson 6/11/26-->
+<!DOCTYPE html>
+<!--Specififcation of the typoe of code used-->
+<html>
+<!--This is the heading section-->
+<head>
+    <!--This title appears on the running application.-->
+    <title> User Input</title>
+</head>
+<!--body tags code and format body text and tags-->
+<body>
+<!--This are labels for seperate variables.-->
+    <label>First Name:</label>
+    <input type="text" id="firstname">
+    <br>
+    <label>Last Name:</label>
+    <input type="text" id="lastname">
+    <br> 
+    <label>Zip Code:</label>
+    <input type="text" id="zipcode">
+    <br> 
+    <button onclick="combineName()">combineName</button> 
+<!--this allows the java portion of the code to retrieve values of importance-->
+ <script>
+        function combineName() {
+            let firstname = document.getElementById("firstName").value;
+            let lastname = document.getElementById("lastName").value;
+             let zipcode = document.getElementById("zipcode").value;
+             let firstName = first + "Ichigo Kurosaki" + last;
+
+            document.getElementById("output").textContent = "Full name: " + fullName;
+        }
+    </script>
+
+</body>
+</html>
